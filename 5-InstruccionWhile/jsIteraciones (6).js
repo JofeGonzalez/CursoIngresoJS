@@ -3,10 +3,14 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
-
-
-
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/5;
+	var num;
+	while(contador<5){
+		num=prompt("Ingrese un número");
+		num=parseInt(num);
+		contador++;
+		acumulador=acumulador+num;
+	}
+	document.getElementById('suma').value=acumulador;
+	document.getElementById('promedio').value=acumulador/5;
 
 }//FIN DE LA FUNCIÓN
