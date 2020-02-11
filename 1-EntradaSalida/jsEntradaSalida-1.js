@@ -2,4 +2,5 @@
 function mostrar()
 {
 	alert("Esto funciona de maravilla");
+	//GitHub funcionando desde terminal
 }
