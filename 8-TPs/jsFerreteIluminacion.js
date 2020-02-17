@@ -73,6 +73,6 @@ function CalcularPrecio ()
  	if(PrecioFinal>119){
  		PrecioImpuestoBruto=PrecioFinal+(PrecioFinal*10/100);
  	}
- 	console.info("PrecioFinal", PrecioFinal);
- 	console.info("IIBB Usted pago ", PrecioImpuestoBruto);
+ 	document.getElementById('precioDescuento').value=PrecioFinal;
+ 	alert("IIBB Usted pago " + PrecioImpuestoBruto);
 }
