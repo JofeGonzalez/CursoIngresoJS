@@ -2,13 +2,12 @@ function mostrar()
 {
 //tomo la edad  
 var laHora = document.getElementById('hora').value;
-
-//alert (laHora);
-	if(laHora>6 && laHora<12){
-		laHora=1;
-	}
 	switch(laHora){
-		case 1:
+		case '7':
+		case '8':
+		case '9':
+		case '10':
+		case '11':
 			alert("Es de mañana.");
 			break;
 		default:
