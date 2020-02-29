@@ -12,6 +12,6 @@ function mostrar()
 			cont++;
 		}
 	}
-	alert("La cantidad de numeros pares encontrados es: " + cont);
+	alert("La cantidad de numeros divisores encontrados es: " + cont);
 
 }//FIN DE LA FUNCIÓN
