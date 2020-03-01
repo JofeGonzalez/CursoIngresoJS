@@ -3,7 +3,7 @@ function mostrar()
 	var pais;
 	var habitantes;
 	var temperatura;
-	var cantTemperaturaPares=0;
+	var cantTemperaturaPares=0;//Esta variable son los paises mayor a 40 grados de temperatura
 	var MenosHabitantes=7000;
 	var cantPaisesTemperatura=0;
 	var cantPaises=0;
