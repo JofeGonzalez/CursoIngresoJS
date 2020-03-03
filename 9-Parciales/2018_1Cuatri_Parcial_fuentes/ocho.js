@@ -8,8 +8,9 @@ function mostrar()
 	var cantPositivos=0;
 	var sumaPositivos=0;
 	var SumaNegativos=0;
-	var MaxNum=-100;
-	var MinNum=100;
+	var MaxNum;
+	var MinNum;
+	var contador=0;
 	var MaxNumLetra;//La letra que corresponde al mayor numero
 	var MinNumLetra;//La letra que corresponde al menor numero
 	var respuesta;
@@ -46,12 +47,12 @@ function mostrar()
 		{
 			SumaNegativos=SumaNegativos+numero;
 		}
-		if(numero>MaxNum)
+		if(contador==0 || numero<MaxNum)
 		{
 			MaxNum=numero;
 			MaxNumLetra=letra;
 		}
-		if(numero<MinNum)
+		if(contador==0 || numero>MinNum)
 		{
 			MinNum=numero;
 			MinNumLetra=letra;
