@@ -4,7 +4,8 @@ function mostrar()
 	var notas;
 	var cantNotas=0;
 	var sumaNotas=0;
-	var NotaMinima=10;
+	var NotaMinima;
+	var contador=0;
 	var SexoNotaMinima;
 	var cantVarones=0; //Cantidad de varones cuya nota es mayor a 6
 	var i;
@@ -22,7 +23,7 @@ function mostrar()
 		{
 			sexo=prompt("EL sexo ingresado no es valido, por favor intente de nuevo");
 		}
-		if(notas<NotaMinima)
+		if(contador==0 || notas>NotaMinima)
 		{
 			NotaMinima=notas;
 			SexoNotaMinima=sexo;
