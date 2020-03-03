@@ -4,10 +4,10 @@ function mostrar()
 	var habitantes;
 	var temperatura;
 	var cantTemperaturaPares=0;//Esta variable son los paises mayor a 40 grados de temperatura
-	var MenosHabitantes=7000;
+	var MenosHabitantes;
 	var cantPaisesTemperatura=0;
 	var cantPaises=0;
-	var TemperaturaMinima=50;
+	var TemperaturaMinima;
 	var PaisTemperaturaMinima;
 	var PaisMenosHabitantes;
 	var SumaHabitantes=0;
@@ -39,7 +39,7 @@ function mostrar()
 		{
 			cantPaisesTemperatura++;
 		}
-		if(temperatura<TemperaturaMinima)
+		if(contador==0 || temperatura>TemperaturaMinima)
 		{
 			TemperaturaMinima=temperatura;
 			PaisTemperaturaMinima=pais;
