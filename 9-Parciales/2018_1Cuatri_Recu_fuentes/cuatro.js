@@ -62,5 +62,5 @@ function mostrar()
 	document.write("La marca que tiene mas kilos en el contenedor es " +marcaMaximoPesoConteiner);
 	document.write("<br>La marca que tiene mas bolsas de alimento en el conteiner es " +marcaMaximoCantidadBolsaConteiner);
 	document.write("<br>La marca que tiene el mayor importe por bolsa de alimento " +marcaMaximoPrecioBolsa);
-	document.write("<br>El importe de la bolsa de alimentos menos pesada es " +MinimoPrecioBolsa+ " y su marca es " +marcaMinimoPesoBolsa);
+	document.write("<br>El importe de la bolsa de alimentos menos pesada es " +MinimoPrecioPesoBolsa+ " y su marca es " +marcaMinimoPesoBolsa);
 }
