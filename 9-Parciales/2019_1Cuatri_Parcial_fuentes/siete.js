@@ -4,9 +4,10 @@ function mostrar()
 	var sex;
 	var i;
 	var SumaAlt=0;
-	var altMin=500;
+	var altMin;
 	var sexAltMin;
 	var CantMuj=0;
+	var contador=0;
 
 	for(i=1; i<6; i++)
 	{
@@ -25,7 +26,7 @@ function mostrar()
 			alert("Sexo invalido");
 		} else
 		{
-			if(altMin>alt)
+			if(contador==0 || altMin<alt)
 			{
 				altMin=alt;
 				sexAltMin=sex;
