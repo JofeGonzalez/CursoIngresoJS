@@ -28,6 +28,8 @@ function mostrar()
 	var ContadorFormaDePagoQR;
 	var FormaDePagoMasUtilizada;
 	var respuesta;
+	var SumaCantidadDias=0;
+	var Reservas=0;
 	var contador=0;
 	do
 	{
@@ -45,8 +47,10 @@ function mostrar()
 		}while(isNaN(CantidadDias) || (CantidadDias<1 && cantidadDias>15));
 		do
 		{
-			FormaDePago=prompt("Ingrese la forma de pago");
-		}while(!isNaN(FormaDePago) || FormaDePago=='efectivo' || FormaDePago=='tarjeta' || FormaDePago=='QR');
+			FormaDePago=prompt("Ingrese la forma de pago (efectivo, tarjeta o QR");
+		}while(!isNaN(FormaDePago) && (FormaDePago!='efectivo' && FormaDePago!='tarjeta' && FormaDePago!='QR'));
+		Reservas++;
+		SumaCantidadDias=SumaCantidadDias+CantidadDias;
 		if(contador==0 || CantidadPersonas<MaxCantidadPersonas)
 		{
 			MaxCantidadPersonas=CantidadPersonas;
@@ -54,7 +58,7 @@ function mostrar()
 		}
 		if(contador==0 || CantidadDias<MaxCantidadDias)
 		{
-			MaxCantidadDias=cantidadDias;
+			MaxCantidadDias=CantidadDias;
 			MaxCantidadDiasCantidadPersonas=CantidadPersonas;
 		}
 		switch(FormaDePago)
@@ -76,12 +80,16 @@ function mostrar()
 		{
 			if(ContadorFormaDePagoTarjeta>ContadorFormaDePagoEfectivo)
 			{
-				FormaDePagoMasUtilizada=''
+				FormaDePagoMasUtilizada='tarjeta';
+			} else
+			{
+				FormaDePagoMasUtilizada='efectivo';
 			}
 		}
 		respuesta=prompt("Quiere ingresar otros datos?");	
 	}while(respuesta=='si');
 	document.write("El huésped que trajo mas personas es: " +maxCantidadPersonasNombre);
-	document.write("La cantidad de pesonas que se quedaron mas días es : " +MaxCantidadDiasCantidadPersonas);
-	document.write("La forma de pago mas utilizada es: " +)
+	document.write("<br>La cantidad de pesonas que se quedaron mas días es : " +MaxCantidadDiasCantidadPersonas);
+	document.write("<br>La forma de pago mas utilizada es: " +FormaDePagoMasUtilizada);
+	document.write("<br>El promedio de cantidad de dias por reserva es: " +SumaCantidadDias/Reservas);
 }
