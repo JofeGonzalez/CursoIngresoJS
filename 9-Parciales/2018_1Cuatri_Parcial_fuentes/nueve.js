@@ -8,8 +8,9 @@ function mostrar()
 	var MarcaPesoMax;
 	var cantProductosMenosCero=0;
 	var cantProductos=0;
-	var PesoMax=1;
-	var PesoMin=100;
+	var PesoMax;
+	var PesoMin;
+	var contador=0;
 	var respuesta;
 
 	do
@@ -29,7 +30,7 @@ function mostrar()
 		{
 			cantTempPares++;
 		}
-		if(peso>PesoMax)
+		if(contador==0 || peso<PesoMax)
 		{
 			PesoMax=peso;
 			MarcaPesoMax=marca;
@@ -38,7 +39,7 @@ function mostrar()
 		{
 			cantProductosMenosCero++;
 		}
-		if(peso<PesoMin)
+		if(contador==0 || peso>PesoMin)
 		{
 			PesoMin=peso;
 		}
