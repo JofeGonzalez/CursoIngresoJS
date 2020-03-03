@@ -8,11 +8,12 @@ function mostrar()
 	var SumaPositivos=0;
 	var contPositivos=0;
 	var SumaNegativos=0;
-	var Max=0;
-	var Min=0;
+	var Max;
+	var Min;
 	var LetraMax;
 	var LetraMin;
 	var respuesta;
+	var contador=0;
 	do
 	{
 		letra=prompt("Ingrese una letra: ");
@@ -46,12 +47,12 @@ function mostrar()
 				SumaNegativos=SumaNegativos+num;
 			}
 		}
-		if(Max<num)
+		if(contador==0 || Max>num)
 		{
 			Max=num;
 			LetraMax=letra;
 		}
-		if(Min>num)
+		if(contador==0 || Min<num)
 		{
 			Min=num;
 			LetraMin=letra;
