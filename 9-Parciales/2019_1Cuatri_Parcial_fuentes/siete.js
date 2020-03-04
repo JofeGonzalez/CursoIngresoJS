@@ -36,6 +36,7 @@ function mostrar()
 		{
 			CantMuj++;
 		}
+		contador++;
 	}
 
 	alert("El promedio de las alturas es: " + SumaAlt/5);
