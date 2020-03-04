@@ -35,6 +35,7 @@ function mostrar()
 				cantVarones++;
 			}
 		}
+		contador++;	
 	}
 	alert("El promedio de las notas totales es: " +sumaNotas/5);
 	alert("La nota mas baja es: " +NotaMinima+ " y el sexo de esa persona es " +SexoNotaMinima);
