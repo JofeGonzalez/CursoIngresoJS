@@ -44,6 +44,7 @@ function mostrar()
 			TemperaturaMinima=temperatura;
 			PaisTemperaturaMinima=pais;
 		}
+		contador++;
 		respuesta=prompt("Quiere ingresar mas datos?");
 	} while(respuesta=='si');
 	document.write("La cantidad de temperaturas pares es: " + cantTemperaturaPares);
