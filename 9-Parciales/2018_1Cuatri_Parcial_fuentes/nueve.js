@@ -43,6 +43,7 @@ function mostrar()
 		{
 			PesoMin=peso;
 		}
+		contador++;
 		respuesta=prompt("Quiere ingresar otro dato?");
 	}while(respuesta=='s');
 	document.write("La cantidad de temperaturas pares es :" +cantTempPares);
