@@ -57,6 +57,7 @@ function mostrar()
 			Min=num;
 			LetraMin=letra;
 		}
+		contador++;
 		respuesta=prompt("Quiere ingresar mas datos?");
 	} while(respuesta=='si');
 
