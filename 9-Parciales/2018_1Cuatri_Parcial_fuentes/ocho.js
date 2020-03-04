@@ -57,6 +57,7 @@ function mostrar()
 			MinNum=numero;
 			MinNumLetra=letra;
 		}
+		contador++;
 		respuesta=prompt("Quiere ingresar otros datos?");
 	} while(respuesta == 's');
 	document.write("La cantidad de numeros pares es :" + cantPares);
